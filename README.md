@@ -14,22 +14,20 @@ A simple **Next.js** project that fetches posts from a public API using `getServ
 
 
 ## Project Structure
-
-nextjs-posts-search/
-├── pages/
-│ └── index.js # Main page with SSR and filtering
-├── components/
-│ ├── SearchBar.js # Search input component
-│ └── PostList.js # Posts display component
-├── package.json
-├── .gitignore
-└── README.md
+pages
+- index.js # Main page with SSR and filtering
+components
+- SearchBar.js # Search input component
+- PostList.js # Posts display component
+styles
+- global.css # for styling
 
 
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/nextjs-posts-search.git
+git clone https://github.com/amirhxil/FullStack-Next.js-PostsSearch-Assessment-DH.DigiLab.git
+
 cd nextjs-posts-search
 
 2. install dependencies:
