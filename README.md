@@ -16,9 +16,11 @@ A simple **Next.js** project that fetches posts from a public API using `getServ
 ## Project Structure
 pages
 - index.js # Main page with SSR and filtering
+
 components
 - SearchBar.js # Search input component
 - PostList.js # Posts display component
+
 styles
 - global.css # for styling
 
@@ -27,8 +29,6 @@ styles
 
 1. Clone the repository:
 git clone https://github.com/amirhxil/FullStack-Next.js-PostsSearch-Assessment-DH.DigiLab.git
-
-cd nextjs-posts-search
 
 2. install dependencies:
 npm install
