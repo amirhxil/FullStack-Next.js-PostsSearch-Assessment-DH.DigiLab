@@ -1,40 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Next.js Posts Search
 
-## Getting Started
+A simple **Next.js** project that fetches posts from a public API using `getServerSideProps` and allows client-side filtering by title. Built with reusable components for clarity and maintainability.
 
-First, run the development server:
 
-```bash
+## Features
+
+- Fetches posts from [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts) on the **server-side** using `getServerSideProps`.
+- Client-side **search filtering** by post title.
+- Clean **component structure**:
+  - `SearchBar` for input
+  - `PostList` for displaying posts
+- Handles API fetch errors gracefully.
+
+
+## Project Structure
+
+nextjs-posts-search/
+├── pages/
+│ └── index.js # Main page with SSR and filtering
+├── components/
+│ ├── SearchBar.js # Search input component
+│ └── PostList.js # Posts display component
+├── package.json
+├── .gitignore
+└── README.md
+
+
+## Installation
+
+1. Clone the repository:
+git clone https://github.com/yourusername/nextjs-posts-search.git
+cd nextjs-posts-search
+
+2. install dependencies:
+npm install
+
+3. Start development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in browser:
+http://localhost:3000
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Usage
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- Type in the search bar to filter posts by title only.
+- The page is server-rendered for fast loading and SEO-friendly.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js – React framework with SSR
+- React Hooks (useState)
+- Fetch API for server-side data
+- Simple CSS styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This project is intended as a small assessment project for full-stack interviews. Designed to demonstrate knowledge of:
+- Next.js data fetching
+- Client-side filtering
+- Component separation and clean code
